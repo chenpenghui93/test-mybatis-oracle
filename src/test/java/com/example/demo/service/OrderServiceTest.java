@@ -30,7 +30,7 @@ class OrderServiceTest {
             order = new Order();
             order.setName("名称" + i);
             order.setType("类别" + i);
-            orderServiceImpl.insert(order);
+//            orderServiceImpl.insert(order);
         }
         long t2 = System.currentTimeMillis();
 
@@ -54,7 +54,7 @@ class OrderServiceTest {
             list.add(order);
         }
         long t2 = System.currentTimeMillis();
-        orderServiceImpl.insertBatch1(list);
+//        orderServiceImpl.insertBatch1(list);
         long t3 = System.currentTimeMillis();
 
         System.out.println("t2=" + t2);
@@ -71,7 +71,7 @@ class OrderServiceTest {
         long t1 = System.currentTimeMillis();
         List<Order> list = new ArrayList<>();
         Order order;
-        for (int i = 0; i < 100000; i++) {
+        for (int i = 0; i < 10; i++) {
             order = new Order();
             order.setName("名称" + i);
             order.setType("类别" + i);
