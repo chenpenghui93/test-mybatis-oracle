@@ -5,8 +5,8 @@ spring:
   datasource:
     driver-class-name: oracle.jdbc.driver.OracleDriver
     url: jdbc:oracle:thin:@10.19.53.15:1521:pgtstdb
-    username: pangea2test
-    password: pangea2test#
+    username:
+    password:
 
 mybatis-plus:
   type-aliases-package: com.example.demo.entity
